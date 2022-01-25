@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+body {
+  font-family: "Electrolize", sans-serif;
+  font-size: 12px;
+  background-image: linear-gradient(
+      115deg,
+      rgba(44, 44, 44, 0.9),
+      rgba(44, 44, 44, 0.9)
+    ),
+    url(/Users/connor/Documents/code/homework/sk8/images/bg.jpg);
+}
+
+.social-icons {
+  width: 91.3%;
+}
+
+.social-icons p {
+  font-size: 16 px;
+  margin: 2rem 0 0 0;
+  color: white;
+}
+
+.nav-social {
+  width: 55px;
+  height: 55px;
+  margin: 0.7rem 0.7rem 0 0;
+}
+
+.nav-social-facebook {
+  background-color: #485793;
+}
+
+.nav-social-wifi {
+  background-color: #c39245;
+}
+
+.nav-social-twitter {
+  background-color: #718cc2;
+}
+
+.nav-social-youtube {
+  background-color: #a44134;
+}
+
+.nav-social-facebook span {
+  margin: 0.3rem 0.2rem 0 0;
+}
+
+.nav-social-wifi span {
+  margin: 0.4rem 0.3rem 0 0;
+  transform: rotate(45deg);
+}
+
+.nav-social-twitter span {
+  margin: 0.3rem 0 0 0;
+}
+
+.nav-social-youtube span {
+  margin: 0.3rem 0 0 0;
+}
+
+.nav-social > span {
+  font-size: 2rem;
+  line-height: inherit;
+}
+
+/* //////////////////////////////MAIN NAV */
+
+.main-nav {
+  margin: 0 0 0 1rem;
+}
+
+.main-nav > button {
+  width: 19.5%;
+  height: 2rem;
+  border: none;
+  margin: 0 1rem 0 0;
+  background-color: #a5332e;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+}
+
+/* ////////////////////////////SLIDESHOW */
+
+.slideshow > .slideshow-picture {
+  object-fit: cover;
+  width: 65.4rem;
+  height: 20rem;
+  margin-top: 1rem;
+  border: 1px solid white;
+  padding: 0;
+}
+
+/* //////////////////////////Articles */
+
+.articles {
+  margin: 0 0 0 2.5rem;
+}
+
+.article {
+  width: 20rem;
+  height: 25rem;
+  background-color: white;
+  margin: 3rem 2.5rem 0 0;
+}
+
+/* //////////////////////////Skaters */
+
+.asorted-skaters {
+  margin: 0 0 0 0.5rem;
+}
+
+.skater-image {
+  object-fit: cover;
+  border: 2px solid white;
+  width: 20%;
+  height: 15rem;
+  padding: 0;
+  margin: 3rem 0.5rem 0 0;
+}
+
+.skater-image-3 {
+  height: 30rem;
+}
+
+.skater-image-4 {
+  width: 40%;
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+/* ///////////////////////////SKATEBOARDS */
+
+.skateboards > .skateboard {
+  transform: rotate(90deg);
+}
