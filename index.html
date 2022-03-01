@@ -1,84 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/4fedc661cb.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4fedc661cb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="container">
-       
-        <nav class="social-icons d-flex justify-content-end">
-            <p>subscribe<span>&#8729;</span></p>
-            <ul class="d-flex">
-                <li class="d-flex justify-content-center nav-social nav-social-facebook">
-                    <span class="fab fa-facebook-f"></span>
-                </li>
-                <li class="d-flex justify-content-center nav-social nav-social-wifi">
-                    <span class="fas fa-wifi"></span>
-                </li>
-                <li class="d-flex justify-content-center nav-social nav-social-twitter">
-                    <span class="fab fa-twitter "></span>
-                </li>
-                <li class="d-flex justify-content-center nav-social nav-social-youtube">
-                    <span class="fab fa-youtube"></span>
-                </li>
+      <nav class="social-icons d-flex justify-content-end">
+        <p>subscribe<span>&#8729;</span></p>
+        <ul class="d-flex nav-social-list">
+          <li
+            class="d-flex justify-content-center nav-social nav-social-facebook"
+          >
+            <span class="fab fa-facebook-f"></span>
+          </li>
+          <li class="d-flex justify-content-center nav-social nav-social-wifi">
+            <span class="fas fa-wifi"></span>
+          </li>
+          <li
+            class="d-flex justify-content-center nav-social nav-social-twitter"
+          >
+            <span class="fab fa-twitter"></span>
+          </li>
+          <li
+            class="d-flex justify-content-center nav-social nav-social-youtube"
+          >
+            <span class="fab fa-youtube"></span>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="row main-nav justify-content-center">
+        <button>sk8t news</button>
+        <button>skateboarders</button>
+        <button>board design</button>
+        <button>contact us</button>
+      </div>
+
+      <div class="row dflex slideshow justify-content-center">
+        <img
+          class="slideshow-picture"
+          src="images/grid.png"
+          alt="man taking photo"
+        />
+        <img
+          class="slideshow-logo"
+          src="images/peralta-logo.png"
+          alt="peralta logo"
+        />
+      </div>
+
+      <div class="row articles justify-content-center">
+        <div class="article">
+          <h1>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h1>
+          <h2>October 10, 2013</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sequi
+            repellat cum molestias, nostrum sapiente, ad vero nisi eaque dolorum
+            deserunt voluptate maxime fugiat molestiae nam error tempora magnam
+            quae.
+          </p>
+          <div>[Read More]</div>
+        </div>
+        <div class="article">
+          <h1>Rodney Mullen: Pop an ollie and innovate! (TED Talk)</h1>
+          <h2>March 10, 2013</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sequi
+            repellat cum molestias, nostrum sapiente, ad vero nisi eaque dolorum
+            deserunt voluptate maxime fugiat molestiae nam error tempora magnam
+            quae.
+          </p>
+          <div>[Read More]</div>
+        </div>
+        <div class="article article-3">
+          <h1>Ray Barbee talks 'Ban This'</h1>
+          <h2>October 10, 2013</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sequi
+            repellat cum molestias, nostrum sapiente, ad vero nisi eaque dolorum
+            deserunt voluptate maxime fugiat molestiae nam error tempora magnam
+            quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+            quasi, nisi dolore pariatur deleniti, mollitia tenetur minus,
+            blanditiis ut harum quibusdam necessitatibus eligendi earum ducimus
+            iusto illum quae reiciendis molestias.
+          </p>
+          <div>[Read More]</div>
+        </div>
+      </div>
+
+      <div class="row skater-images-wrapper">
+        <div class="skater-image-12-wrapper col-8 row">
+          <img
+            class="skater-image skater-image-1 col mr-1"
+            src="images/sk8er-4.png"
+            alt="Lance Mountain"
+          />
+          <img
+            class="skater-image skater-image-2 col ml-1"
+            src="images/sk8er-3.png"
+            alt="Rodney Mullen"
+          />
+          <div class="h-20 skater-image-4-wrapper col-12">
+            <img
+              class="skater-image skater-image-4"
+              src="images/sk8er-1 copy.png"
+              alt="Steve Cabalerro"
+            />
+          </div>
+        </div>
+        <div class="col skater-image-3-wrapper">
+          <img
+            class="skater-image skater-image-3"
+            src="images/sk8er-2.png"
+            alt="Jimmy Guerrero"
+          />
+        </div>
+      </div>
+
+      <div class="row skateboards justify-content-center">
+        <div class="col">
+          <img src="images/sk8-1.png" alt="" class="skateboard" />
+        </div>
+        <div class="col">
+          <img src="images/sk8-2.png" alt="" class="skateboard" />
+        </div>
+        <div class="col">
+          <img src="images/sk8-3.png" alt="" class="skateboard" />
+        </div>
+        <div class="col">
+          <img src="images/sk8-4.png" alt="" class="skateboard" />
+        </div>
+        <div class="col">
+          <img src="images/sk8-5.png" alt="" class="skateboard" />
+        </div>
+        <div class="col">
+          <img src="images/sk8-6.png" alt="" class="skateboard" />
+        </div>
+        <div class="col">
+          <img src="images/sk8-7.png" alt="" class="skateboard" />
+        </div>
+        <div class="col">
+          <img src="images/sk8-8.png" alt="" class="skateboard" />
+        </div>
+        <div class="col">
+          <img src="images/sk8-9.png" alt="" class="skateboard" />
+        </div>
+        <div class="col">
+          <img src="images/sk8-10.png" alt="" class="skateboard" />
+        </div>
+      </div>
+
+      <div class="form-wrapper row">
+        <div class="col-6 row message-form-left">
+          <h1>Contact Us for More Information</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+            adipisci ipsum repellendus voluptas repellat praesentium numquam
+            iusto quia, nemo velit fugit ea consequuntur esse officiis id, eum
+            cupiditate sequi eaque.
+          </p>
+          <div>
+            <ul class="d-flex social-list">
+              <li
+                class="d-flex justify-content-center nav-social-2 nav-social-facebook-2"
+              >
+                <span class="fab fa-facebook-f"></span>
+              </li>
+              <li
+                class="d-flex justify-content-center nav-social-2 nav-social-wifi-2"
+              >
+                <span class="fas fa-wifi"></span>
+              </li>
+              <li
+                class="d-flex justify-content-center nav-social-2 nav-social-twitter-2"
+              >
+                <span class="fab fa-twitter"></span>
+              </li>
+              <li
+                class="d-flex justify-content-center nav-social-2 nav-social-youtube-2"
+              >
+                <span class="fab fa-youtube"></span>
+              </li>
             </ul>
-        </nav>
-
-
-        <div class="row main-nav justify-content-center">
-            <button>
-            sk8t news
-            </button>
-            <button>
-            skateboarders
-            </button>
-            <button>
-            board design
-            </button>
-            <button>
-            contact us
-            </button>
+          </div>
         </div>
-
-        <div class="row slideshow justify-content-center">
-            <img class="slideshow-picture" src="images/top-image.png" alt="man taking photo">
-
+        <div class="col row">
+          <form class="message-form-right d-flex flex-column">
+            <div class="form-group input">
+              <input type="text" class="form-control" placeholder="name" />
+            </div>
+            <div class="form-group input">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="form-group input">
+              <textarea
+                class="form-control"
+                rows="3"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn submit-button">Submit</button>
+          </form>
         </div>
-
-        <div class="row articles justify-content-center">
-            <div class="article"></div>
-            <div class="article"></div>
-            <div class="article"></div>
-        </div>
-
-        <div class="row asorted-skaters justify-content-center">
-            <img class="skater-image skater-image-1" src="images/sk8er-4.png" alt="Lance Mountain">
-            <img class="skater-image skater-image-2" src="images/sk8er-3.png" alt="Rodney Mullen">
-            <img class="skater-image skater-image-3" src="images/sk8er-2.png" alt="Jimmy Guerrero">
-            <img class="skater-image skater-image-4" src="images/sk8er-1.png" alt="Steve Cabalerro">
-        </div>
-
-        <div class="skateboards justify-content-center">
-            <img src="images/sk8-1.png" alt="" class="skateboard">
-            <img src="images/sk8-2.png" alt="" class="skateboard">
-            <img src="images/sk8-3.png" alt="" class="skateboard">
-            <img src="images/sk8-4.png" alt="" class="skateboard">
-            <img src="images/sk8-5.png" alt="" class="skateboard">
-            <img src="images/sk8-6.png" alt="" class="skateboard">
-            <img src="images/sk8-7.png" alt="" class="skateboard">
-            <img src="images/sk8-8.png" alt="" class="skateboard">
-            <img src="images/sk8-9.png" alt="" class="skateboard">
-            <img src="images/sk8-10.png" alt="" class="skateboard">
-        </div>
-
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>

@@ -86,12 +86,33 @@ body {
 /* ////////////////////////////SLIDESHOW */
 
 .slideshow > .slideshow-picture {
-  object-fit: cover;
+  position: relative;
   width: 65.4rem;
   height: 20rem;
   margin-top: 1rem;
+  padding: 0;
+  opacity: 0.3;
+}
+
+.slideshow::before {
+  display: block;
+  position: absolute;
+  content: "";
+  background-image: url(./images/top-image.png);
+  background-position: right 70% top 20%;
   border: 1px solid white;
   padding: 0;
+  width: 65.4rem;
+  height: 20rem;
+  margin-top: 1rem;
+}
+
+.slideshow-logo {
+  position: absolute;
+  height: auto;
+  width: 20%;
+  margin-top: 4rem;
+  left: 23rem;
 }
 
 /* //////////////////////////Articles */
@@ -107,37 +128,374 @@ body {
   margin: 1rem 2.5rem 0 0;
 }
 
+.article > h1 {
+  margin: 1rem 0 0 0;
+  font-size: 28px;
+}
+
+.article > h2 {
+  margin: 1rem 0 0 0;
+  font-size: 18px;
+  color: grey;
+  opacity: 0.6;
+}
+
+.article > p {
+  margin-top: 1rem;
+}
+
+.article > div {
+  margin-top: 4.4rem;
+  margin-left: 7rem;
+  color: red;
+}
+
+.article-3 > div {
+  margin-top: 2rem;
+}
+
 /* //////////////////////////Skaters */
 
-.asorted-skaters {
-  margin: 0 0 0 0.5rem;
+.skater-images-wrapper {
+  margin-left: 0;
+  padding: 0 126px 0 126px;
+  margin-top: 1rem;
 }
 
 .skater-image {
-  object-fit: cover;
+  overflow: hidden;
   border: 2px solid white;
-  width: 20%;
-  height: 15rem;
   padding: 0;
-  margin: 1rem 0.5rem 0 0;
+  margin-right: 2px;
+}
+
+.skater-image-12-wrapper {
+  padding: 0;
+  margin: 0 2px 0 2px;
+}
+
+.skater-image-2 {
+  margin-right: 0;
+}
+
+.skater-image-3-wrapper {
+  padding: 0;
 }
 
 .skater-image-3 {
-  height: 30rem;
+  height: 100%;
+}
+
+.skater-image-4-wrapper {
+  padding: 0;
+  overflow: hidden;
 }
 
 .skater-image-4 {
-  width: 40%;
-  margin: 0.5rem 0.5rem 0 0;
+  margin: 2px 0 0 0;
+  padding: 0;
+  width: 100%;
 }
 
 /* ///////////////////////////SKATEBOARDS */
 
 .skateboards {
-  background-color: red;
+  background-color: white;
+  flex-wrap: nowrap;
+  height: 20rem;
+  width: 80%;
+  margin-top: 1rem;
+  margin-left: 130px;
 }
 
-.skateboards > .skateboard {
+.skateboards > div {
+  transform-origin: top left;
   transform: rotate(90deg);
-  margin: 0 2rem 0 0;
+  padding: 0 0 0 0;
+  margin: 2rem 0 0 5rem;
+  height: 3rem;
+  width: 1rem;
+}
+
+.skateboards > div > .skateboard {
+  padding: 0 0 0 0;
+}
+
+/* /////////////////////////FORM////////// */
+
+.form-wrapper {
+  background-color: white;
+  margin: 1rem 0 1rem 130px;
+  width: 80%;
+}
+
+.submit-button {
+  background-color: #a5332e;
+  width: 70%;
+  align-self: flex-end;
+  margin-top: 1rem;
+  color: white;
+}
+
+.message-form-left {
+  margin: 1rem 0 1rem 0;
+}
+
+.message-form-left > h1 {
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.message-form-right {
+  margin: 0 0 1rem 0;
+}
+
+.input {
+  margin-top: 1rem;
+}
+
+.nav-social-2 {
+  width: 55px;
+  height: 55px;
+  margin: 0.7rem 0.7rem 0 0;
+}
+.social-list {
+  padding: 0;
+}
+
+.nav-social-facebook-2 {
+  background-color: #353535;
+}
+
+.nav-social-wifi-2 {
+  background-color: #919191;
+}
+
+.nav-social-twitter-2 {
+  background-color: #555454;
+}
+
+.nav-social-youtube-2 {
+  background-color: #555454;
+}
+
+.nav-social-facebook-2 span {
+  margin: 0.3rem 0.2rem 0 0;
+}
+
+.nav-social-wifi-2 span {
+  margin: 0.4rem 0.3rem 0 0;
+  transform: rotate(45deg);
+}
+
+.nav-social-twitter-2 span {
+  margin: 0.3rem 0 0 0;
+}
+
+.nav-social-youtube-2 span {
+  margin: 0.3rem 0 0 0;
+}
+
+.nav-social-2 > span {
+  font-size: 2rem;
+  line-height: inherit;
+}
+
+/* ///////////////////////////MEDIA QUERIES */
+
+@media all and (max-width: 1400px) {
+  /* /////////////////NAV */
+  .nav-social-youtube {
+    margin-right: 0.5rem;
+  }
+
+  /* //////////////////SLIDESHOW */
+  .slideshow > .slideshow-picture {
+    position: relative;
+    width: 56.5rem;
+    height: 20rem;
+    margin-top: 1rem;
+    padding: 0;
+    opacity: 0.3;
+  }
+
+  .slideshow::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(./images/top-image.png);
+    background-position: right 70% top 20%;
+    border: 1px solid white;
+    padding: 0;
+    width: 56.5rem;
+    height: 20rem;
+    margin-top: 1rem;
+  }
+
+  .slideshow-logo {
+    position: absolute;
+    height: auto;
+    width: 20%;
+    margin-top: 6rem;
+    left: 12rem;
+  }
+
+  /* ///////////////////SKATEBOARDS */
+
+  .skateboards {
+    background-color: white;
+    flex-wrap: nowrap;
+    height: 20rem;
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: 130px;
+  }
+
+  .skateboards > div {
+    transform-origin: top left;
+    transform: rotate(90deg);
+    padding: 0 0 0 0;
+    margin: 3rem 0 0 4.3rem;
+    width: 1px;
+  }
+
+  .skateboards > div > .skateboard {
+    padding: 0 0 0 0;
+    height: 50px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  /* /////////////////////////NAV */
+
+  .nav-social-youtube {
+    margin-right: 0.3rem;
+  }
+  /* //////////////////SLIDESHOW */
+  .slideshow > .slideshow-picture {
+    position: relative;
+    width: 47.8rem;
+    height: 20rem;
+    margin-top: 1rem;
+    padding: 0;
+    opacity: 0.3;
+  }
+
+  .slideshow::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(./images/top-image.png);
+    background-position: right 70% top 20%;
+    border: 1px solid white;
+    padding: 0;
+    width: 47.8rem;
+    height: 20rem;
+    margin-top: 1rem;
+  }
+
+  .slideshow-logo {
+    position: absolute;
+    height: auto;
+    width: 20%;
+    margin-top: 6rem;
+    left: 13rem;
+  }
+  /* /////////////////// */
+
+  /* ///////////////////////////SKATEBOARDS */
+
+  .skateboards {
+    background-color: white;
+    flex-wrap: nowrap;
+    height: 20rem;
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: 130px;
+  }
+
+  .skateboards > div {
+    transform-origin: top left;
+    transform: rotate(90deg);
+    padding: 0 0 0 0;
+    margin: 3rem 0 0 4rem;
+    width: 1px;
+  }
+
+  .skateboards > div > .skateboard {
+    padding: 0 0 0 0;
+    height: 50px;
+  }
+}
+@media all and (max-width: 992px) {
+  /* /////////////////////////NAV */
+  .nav-social-youtube {
+    margin-right: 0;
+  }
+
+  /* //////////////////SLIDESHOW */
+  .slideshow > .slideshow-picture {
+    position: relative;
+    width: 36.2rem;
+    height: 20rem;
+    margin-top: 1rem;
+    padding: 0;
+    opacity: 0.3;
+  }
+
+  .slideshow::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background-image: url(./images/top-image.png);
+    background-position: right 60% top 20%;
+    border: 1px solid white;
+    padding: 0;
+    width: 36.2rem;
+    height: 20rem;
+    margin-top: 1rem;
+  }
+
+  .slideshow-logo {
+    position: absolute;
+    height: auto;
+    width: 20%;
+    margin-top: 6rem;
+    left: 13rem;
+  }
+
+  /* ///////////////////////////SKATEBOARDS */
+
+  .skateboards {
+    background-color: white;
+    flex-wrap: nowrap;
+    height: 20rem;
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: 64px;
+  }
+
+  .skateboards > div {
+    transform-origin: top left;
+    transform: rotate(90deg);
+    padding: 0 0 0 0;
+    margin: 4.9rem 0 0 2.8rem;
+    width: 1px;
+  }
+
+  .skateboards > div > .skateboard {
+    padding: 0 0 0 0;
+    height: 35px;
+  }
+
+  /* ////////////////////////////FORM */
+
+  .form-wrapper {
+    background-color: white;
+    margin: 1rem 0 1rem 64px;
+  }
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
 }
